@@ -120,7 +120,7 @@ def main():
     space = tkinter.Canvas(root, width=window_width, height=window_height, bg="black")
     space.pack(side=tkinter.TOP)
     # нижняя панель с кнопками
-    frame = tkinter.Frame(space)  # was from root
+    frame = tkinter.Frame(root)
     frame.pack(side=tkinter.BOTTOM)
 
     start_button = tkinter.Button(frame, text="Start", command=start_execution, width=6)
