@@ -14,6 +14,7 @@ def read_space_objects_data_from_file(input_filename):
     """
 
     objects = []
+    print('ready to open file...')
     with open(input_filename, encoding='utf8') as input_file:
         for line in input_file:
             if len(line.strip()) == 0 or line[0] == '#':
